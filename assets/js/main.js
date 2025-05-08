@@ -16,8 +16,8 @@ let sec01_swiper = new Swiper(".sec01_mySwiper", {
 // Initialize Swiper
 let sec07_swiper = new Swiper(".sec07_mySwiper", {
   direction: "vertical",
-  slidesPerView: 4,
-  spaceBetween: 15,
+  slidesPerView: 3.5,
+  spaceBetween: 20,
   loop: true,
   grabCursor: true,
   autoplay: {
@@ -26,13 +26,12 @@ let sec07_swiper = new Swiper(".sec07_mySwiper", {
   },
   mousewheel: true,
   centeredSlides: true,
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-    },
-    540: {
-      slidesPerView: 3,
-    }
-  }
+  // breakpoints: {
+  //   768: {
+  //     slidesPerView: 3.5,
+  //   },
+  //   540: {
+  //     slidesPerView: 2,
+  //   }
+  // }
 });
-
