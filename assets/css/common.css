@@ -1,3 +1,16 @@
+:root {
+    --black:#000000;
+    --main-color:#3182f6;
+    --sub-color:#1c6fd9;
+    --background-color:#f7f8fa;
+    --main-font-size : 30px;
+    --sub-font-size: 18px;
+    --main-font-color:#1a1a1a;
+    --middle-font-color: #666; 
+    --light-font-color:#afb4b7;
+  }
+
+
 /* font */
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
 
