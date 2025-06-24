@@ -44,6 +44,9 @@ let sec07_swiper = new Swiper(".sec07_mySwiper", {
     },
     430: {
       slidesPerView: 2.5,
+    },
+    390: {
+      slidesPerView: 2,
     }
   }
 });

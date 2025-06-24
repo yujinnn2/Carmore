@@ -1,8 +1,8 @@
-@import url('reset.css');
-@import url('normalize.css');
-@import url('common.css');
+@import url("reset.css");
+@import url("normalize.css");
+@import url("common.css");
 
-/* 메뉴  nav*/
+/* GNB 메뉴 */
 header {
   width: 100%;
   height: 60px;
@@ -58,7 +58,6 @@ header {
 .nav-bar.active {
   height: 100vh;
 }
-
 
 /* section 01 섹션1*/
 .section01 {
@@ -128,18 +127,18 @@ header {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
+.car {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
 .swiper-slide {
   padding-top: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px;
-}
-
-.car {
-  max-width: 100%;
-  height: auto;
-  transition: transform 0.5s ease;
 }
 
 .swiper-button-next {
@@ -154,7 +153,7 @@ header {
 }
 
 .swiper-button-next::after {
-  content: '';
+  content: "";
   display: block;
   width: 24px;
   height: 24px;
@@ -194,28 +193,24 @@ header {
   }
 }
 
-
 /* section02 섹션2 */
 .section02 {
   background-color: #ffffff;
-  padding: 250px 0;
+  padding: 260px 0;
   position: relative;
   /* overflow: hidden; */
 }
 
 .toggle {
   position: absolute;
-  top: -5px;
-  right: 960px;
+  top: -3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 48px;
   height: 48px;
   cursor: pointer;
   transition: transform 0.3s ease;
   z-index: 10;
-}
-
-.toggle:hover {
-  transform: translateY(-5px);
 }
 
 .toggle_img {
@@ -234,7 +229,7 @@ header {
 }
 
 .main-title h2::after {
-  content: '';
+  content: "";
   display: block;
   width: 70px;
   height: 4px;
@@ -271,7 +266,7 @@ header {
 }
 
 .main-icon::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -334,7 +329,6 @@ header {
 }
 
 @keyframes float {
-
   0%,
   100% {
     transform: translateY(0);
@@ -344,7 +338,6 @@ header {
     transform: translateY(-10px);
   }
 }
-
 
 /* section03 섹션3 */
 .section03 {
@@ -356,11 +349,10 @@ header {
   position: relative;
   padding-left: 40px;
   padding-bottom: 40px;
-
 }
 
 .section03 .main-title::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -372,7 +364,7 @@ header {
 }
 
 .section03 .main-title::after {
-  content: '';
+  content: "";
   position: absolute;
   right: -30px;
   width: 80px;
@@ -459,7 +451,7 @@ header {
 
 .input-box input {
   width: 100%;
-  padding: 16px 0;
+  padding: 12px 0;
   border: none;
   outline: none;
   font-size: 16px;
@@ -483,14 +475,15 @@ header {
 
 .check-box input[type="checkbox"] {
   appearance: none;
-  width: 20px;
-  height: 30px;
+  width: 24px;
+  height: 20px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  margin-right: 10px;
+  margin-right: 8px;
   vertical-align: middle;
   position: relative;
   cursor: pointer;
+  display: inline-block;
 }
 
 .check-box input[type="checkbox"]:checked {
@@ -499,12 +492,13 @@ header {
 }
 
 .check-box input[type="checkbox"]:checked::after {
-  content: '✓';
+  content: "✓";
   color: white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 14px;
 }
 
 .check-box label {
@@ -512,6 +506,9 @@ header {
   color: #666;
   cursor: pointer;
   vertical-align: middle;
+  display: inline-block; /* 인라인 블록으로 변경 */
+  margin-right: 15px; /* 라벨 간 간격 추가 */
+  line-height: 20px; /* 체크박스 높이와 동일하게 설정 */
 }
 
 .button {
@@ -549,7 +546,6 @@ header {
   }
 }
 
-
 /* section 04 & 05 섹션 4 & 5 */
 .section04.faq {
   background: #fff;
@@ -574,7 +570,9 @@ header {
   border-radius: 16px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
   overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .faq-item:hover {
@@ -628,7 +626,6 @@ header {
   font-size: 24px;
 }
 
-
 /* section06 섹션6 */
 .section06 {
   background: #fff;
@@ -656,7 +653,7 @@ header {
 
 .section06 .wrapper:hover {
   transform: translateY(-4px);
-  box-shadow: 
+  box-shadow:
     0 10px 25px rgba(49, 130, 246, 0.15),
     0 5px 15px rgba(0, 0, 0, 0.08);
   animation: wrapper-hover 0.6s;
@@ -704,7 +701,7 @@ header {
 .price h4 {
   font-size: 32px;
   font-weight: 700;
-  color: var(--main-color)
+  color: var(--main-color);
 }
 
 .like p {
@@ -731,7 +728,6 @@ header {
 .sletos {
   padding: 80px 0 30px;
 }
-
 
 /* section07 섹션7 */
 .section07 {
@@ -819,10 +815,9 @@ header {
   font-weight: 400;
 }
 
-
 /* section08 섹션8 */
 .section08 {
-  background: #2F66E6;
+  background: #2f66e6;
   text-align: center;
   padding: 165px 0;
 }
@@ -856,7 +851,6 @@ header {
 .shop:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-
 }
 
 .book {
@@ -864,7 +858,7 @@ header {
   height: 44px;
   border: none;
   border-radius: 10px;
-  background: #487AF0;
+  background: #487af0;
   padding: 10px 10px;
   font-size: 16px;
   color: #fff;
@@ -952,10 +946,8 @@ header {
   background-color: #e8ebee;
 }
 
-
- 
 /* media( 미디어쿼리 / 반응형구간 ) */
-@media (max-width :1280px) {
+@media (max-width: 1280px) {
   /* section01 섹션1 */
 
   .section01 {
@@ -966,22 +958,15 @@ header {
     font-size: 40px;
   }
 
-
   /* section02 섹션2 */
-  .section02{
-    padding:170px 0;
+  .section02 {
+    padding: 170px 0;
   }
-
-  .toggle {
-    right: 640px;
-  }
-
 
   /* section03 섹션3 */
-  .section03 .main-title{
+  .section03 .main-title {
     margin-right: 200px;
   }
-
 
   /* section06 섹션6 */
   .like {
@@ -992,29 +977,26 @@ header {
     font-size: 21px;
   }
 
-
   /* section07 섹션7 */
-  .section07 .review-main p{
+  .section07 .review-main p {
     font-size: 20px;
   }
 
-  .section07 .wrapper{
-    height:260px;
+  .section07 .wrapper {
+    height: 260px;
   }
 
-
   /* section09 섹션9 */
-  .section09 .container{
+  .section09 .container {
     gap: 120px;
   }
 }
 
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
   /* nav-bar 메뉴 */
   .nav-bar a {
     font-size: 13px;
   }
-
 
   /* section01 섹션1 */
   .section01 {
@@ -1029,14 +1011,9 @@ header {
     font-size: 30px;
   }
 
-
   /* section02 섹션2 */
   .section02 .container img {
     width: 80%;
-  }
-
-  .toggle {
-    right: 512px;
   }
 
   .wrapper {
@@ -1047,7 +1024,6 @@ header {
     min-width: calc(50% - 20px);
     padding: 30px 20px;
   }
-
 
   /* section03 섹션3 */
   .section03 .main-title {
@@ -1073,15 +1049,14 @@ header {
     font-size: 20px;
   }
 
+  /* section04 & section05  섹션4 & 섹션5 */
+  .faq-answer {
+    font-size: 20px;
+  }
 
-    /* section04 & section05  섹션4 & 섹션5 */
-    .faq-answer{
-      font-size: 20px;
-    }
-    
-    .tag{
-      font-size: 19px;
-    }
+  .tag {
+    font-size: 19px;
+  }
   /* section06 섹션6 */
   .section06 .wrapper:nth-child(3n) {
     display: none;
@@ -1095,14 +1070,13 @@ header {
     justify-content: space-between;
   }
 
-
   /* section07 섹션7 */
-  .section07 .content{
+  .section07 .content {
     padding-top: 250px;
   }
 
-  .section07 .swiper{
-    width:58%;
+  .section07 .swiper {
+    width: 58%;
     height: 800px;
   }
 
@@ -1136,22 +1110,21 @@ header {
     transform: scale(1.03);
   }
 
-
   /* section09 섹션9 */
-  .section09 .container{
-    gap:55px;
+  .section09 .container {
+    gap: 55px;
   }
 
-  .section09 img{
+  .section09 img {
     max-width: 85%;
   }
 
-  .info-text{
+  .info-text {
     font-size: 12px;
   }
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
   /* section01 섹션1 */
   .content-row {
     flex-direction: column;
@@ -1172,18 +1145,18 @@ header {
     right: 10px;
   }
 
-
   /* section03 섹션3 */
-   .section03 .container {
+  .section03 .container {
     flex-direction: column;
   }
-  
-  .main-title, .main-input {
+
+  .main-title,
+  .main-input {
     width: 100%;
   }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   /* nav 메뉴 */
   header {
     padding: 0 55px;
@@ -1229,7 +1202,6 @@ header {
     opacity: 1;
   }
 
-
   /* section01 섹션1 */
   .section01 {
     padding: 126px 0;
@@ -1255,7 +1227,6 @@ header {
     padding: 0px;
   }
 
-
   /* section02 섹션2 */
   .section02 {
     padding: 150px 0;
@@ -1275,13 +1246,8 @@ header {
     margin-bottom: 40px;
   }
 
-  .toggle{
-    right: 384px;
-  }
-
-
   /* section03 섹션3 */
-  .section03 .main-title{
+  .section03 .main-title {
     width: 80%;
     margin-bottom: 100px;
     margin-left: 55px;
@@ -1307,7 +1273,6 @@ header {
 
   .number {
     font-size: 22px;
-
   }
   .main-input {
     width: 85%;
@@ -1318,7 +1283,7 @@ header {
     margin-top: 0px;
   }
 
-  .tell{
+  .tell {
     margin-bottom: 10px;
   }
 
@@ -1330,21 +1295,19 @@ header {
     font-size: 14px;
   }
 
-
   /* section04 섹션4 & section05 섹션5 */
-  .faq-question h3{
+  .faq-question h3 {
     font-size: 18px;
   }
 
-  .faq-answer{
-    padding:40px;
+  .faq-answer {
+    padding: 40px;
     font-size: 14px;
   }
 
-  .tag{
+  .tag {
     font-size: 12px;
   }
-
 
   /* section06 섹션6*/
   .section06 .price p {
@@ -1355,43 +1318,44 @@ header {
     font-size: 30px;
   }
 
-  .price{
-    width:60%;
+  .price {
+    width: 60%;
   }
 
-  .like{
+  .like {
     margin-left: 0;
   }
 
   /* section07 섹션7 */
-  .section07 .swiper{
+  .section07 .swiper {
     width: 57%;
   }
 
-   .section07 .swiper-slide{
+  .section07 .swiper-slide {
     padding: 10px;
   }
 
-  .section07 .wrapper{
+  .section07 .wrapper {
     height: 220px;
   }
-  .section07 img{
-    max-width:50%;
+  .section07 img {
+    max-width: 50%;
   }
 
-  .section07 .container h3{
+  .section07 .container h3 {
     font-size: 32px;
   }
 
-  .section07 .real{
-    font-size:13px;
+  .section07 .real {
+    font-size: 13px;
   }
 
-  .section07 .sonata{
+  .section07 .sonata {
     font-size: 17px;
   }
 
-  .section07 .ten, .section07 .ten span{
+  .section07 .ten,
+  .section07 .ten span {
     font-size: 13px;
   }
 
@@ -1399,34 +1363,33 @@ header {
     font-size: 14px;
   }
 
+  /* section09 섹션9 */
+  .section09 .container {
+    gap: 30px;
+  }
 
-    /* section09 섹션9 */
-    .section09 .container{
-      gap:30px;
-    }
+  .info-text {
+    font-size: 10px;
+  }
 
-    .info-text{
-      font-size: 10px;
-    }
+  .notice {
+    font-size: 10px;
+  }
 
-    .notice{
-      font-size: 10px;
-    }
+  .toss-button {
+    font-size: 10px;
+  }
 
-    .toss-button{
-      font-size: 10px;
-    }
+  .section09 img {
+    max-width: 70%;
+  }
 
-    .section09 img{
-      max-width: 70%;
-    }
-
-    .section09 .add{
-      flex-direction: column;
-    }
+  .section09 .add {
+    flex-direction: column;
+  }
 }
 
-@media (max-width:576px) {
+@media (max-width: 576px) {
   /* section01 섹션1 */
   .w-30 h2 {
     font-size: 28px;
@@ -1439,7 +1402,6 @@ header {
   .counsel {
     padding: 14px 24px;
   }
-
 
   /* section02 섹션2 */
   .main-icon {
@@ -1461,28 +1423,28 @@ header {
     font-size: 15px;
   }
 
-
   /* section03 섹션3 */
-   .section03 {
+  .section03 {
     padding: 60px 0;
   }
-  
-  .main-title, .main-input {
+
+  .main-title,
+  .main-input {
     padding: 30px;
   }
-  
+
   .main-title h3 {
     font-size: 28px;
   }
-  
+
   .number {
     font-size: 20px;
   }
 }
 
-@media (max-width:540px) {
+@media (max-width: 540px) {
   /* section01 섹션1 */
-  .section01{
+  .section01 {
     padding: 0px;
   }
 
@@ -1506,11 +1468,11 @@ header {
     padding-left: 35px;
   }
 
-  .w-70{
-    width:85%;
+  .w-70 {
+    width: 85%;
   }
 
-  .swiper{
+  .swiper {
     margin-top: 30px;
     margin-bottom: 30px;
   }
@@ -1533,13 +1495,12 @@ header {
     padding-top: 50px;
   }
 
-  .swiper-button-next{
+  .swiper-button-next {
     display: none;
   }
 
-
   /* section02 섹션2 */
-  .section02{
+  .section02 {
     padding: 100px 0;
   }
 
@@ -1547,16 +1508,14 @@ header {
     flex-wrap: wrap;
   }
 
-    .section02 .main-icon {
+  .section02 .main-icon {
     width: 50%;
     height: 80%;
   }
 
-  .toggle{
-    top:0px;
-    right:260px;
+  .toggle {
+    top: 1%;
   }
-
 
   /* section03 섹션3 */
   .section03 .container {
@@ -1573,38 +1532,36 @@ header {
     margin: 0 auto;
   }
 
-
   /* section04 섹션4 & section05 섹션5 */
-  .section04.faq, 
+  .section04.faq,
   .section05.faq {
     padding: 60px 0;
   }
-  
+
   .faq-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .faq-question {
     padding: 24px;
   }
-  
+
   .faq-answer {
     padding: 30px 24px;
     font-size: 17px;
   }
-  
+
   .faq-question h3 {
     font-size: 19px;
   }
-  
+
   .faq-number {
     margin-bottom: 8px;
   }
-  .tag{
+  .tag {
     font-size: 16px;
   }
-
 
   /* section06 섹션6 */
   .section06 .like {
@@ -1628,11 +1585,10 @@ header {
     width: 100%;
   }
 
-
   /* section07 섹션7 */
-  .section07 .swiper{
-    width:90%;
-    height:600px;
+  .section07 .swiper {
+    width: 90%;
+    height: 600px;
   }
 
   .section07 .container {
@@ -1643,13 +1599,12 @@ header {
     text-align: left;
     margin-left: 90px;
   }
-  
+
   .section07 .content {
     text-align: center;
     padding-top: 0px;
     padding-bottom: 50px;
   }
-
 
   /* section09 섹션9 */
   .section09 .container {
@@ -1665,31 +1620,63 @@ header {
   }
 }
 
-/* 미뎌쿼리 아예 안먹음 .. 이유는 모름. ..  */
-@media (max-width:430px) {
+@media (max-width: 430px) {
   /* header */
-  header{
+  header {
     padding: 0 24px;
   }
   /* section01 */
   /* section02 */
-  .toggle{
-    right: 215px;
-  }
 
   /* section06 섹션6 */
-    .price h4 {
+  .price h4 {
     font-size: 26px;
   }
 
   /* section 07 섹션7 */
   .section07 .container h3 {
-  font-size: 30px;
+    font-size: 30px;
   }
 
   .section07 .container h3 {
     text-align: left;
     margin-left: 70px;
   }
+}
 
+/* 미디어 쿼리 안먹음ㅠ */
+@media (max-width: 390px) {
+  /* section03 섹션3 */
+  .main-title h4 {
+    font-size: 16px;
+  }
+  .main-title h3 {
+    font-size: 23px;
+  }
+  .check-box label {
+    font-size: 12px;
+  }
+  .main-input h3 {
+    font-size: 18px;
+  }
+
+  /* section07 섹션7 */
+  .section07 .container h3 {
+    margin-left: 35px;
+  }
+
+  .section07 .wrapper {
+    height: 250px;
+  }
+  .section07 .sonata {
+    font-size: 16px;
+  }
+  .section07 .review-main p {
+    font-size: 13px;
+  }
+
+  /* section08 섹션8 */
+  .section08 .main-text h3 {
+    font-size: 28px;
+  }
 }
