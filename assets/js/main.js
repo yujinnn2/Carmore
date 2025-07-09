@@ -16,20 +16,18 @@ let sec01_swiper = new Swiper(".sec01_mySwiper", {
 // section07 swiper
 let sec07_swiper = new Swiper(".sec07_mySwiper", {
   direction: "vertical",
-  slidesPerView: 3.5,
-  spaceBetween: 20,
+
+
   loop: true,
   grabCursor: true,
-  autoplay: {
-    delay: 1500,
-    disableOnInteraction: true
-  },
+  // autoplay: {
+  //   delay: 1500,
+  //  disableOnInteraction: true
+  // },
   mousewheel: true,
   centeredSlides: true,
   breakpoints: {
-    1920: {
-      slidesPerView: 3.5,
-    },
+
     1280: {
       slidesPerView: 3.5,
     },
