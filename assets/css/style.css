@@ -198,7 +198,6 @@ header {
   background-color: #ffffff;
   padding: 260px 0;
   position: relative;
-  /* overflow: hidden; */
 }
 
 .toggle {
@@ -506,9 +505,9 @@ header {
   color: #666;
   cursor: pointer;
   vertical-align: middle;
-  display: inline-block; /* 인라인 블록으로 변경 */
-  margin-right: 15px; /* 라벨 간 간격 추가 */
-  line-height: 20px; /* 체크박스 높이와 동일하게 설정 */
+  display: inline-block; 
+  margin-right: 15px; 
+  line-height: 20px; 
 }
 
 .button {
@@ -871,7 +870,7 @@ header {
 }
 
 .section08 .main-text h3 {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 /* section09 섹션9 */
@@ -949,7 +948,6 @@ header {
 /* media( 미디어쿼리 / 반응형구간 ) */
 @media (max-width: 1280px) {
   /* section01 섹션1 */
-
   .section01 {
     padding: 160px 0;
   }
@@ -1242,7 +1240,7 @@ header {
   }
 
   .main-title h2 {
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 40px;
   }
 
@@ -1433,10 +1431,6 @@ header {
     padding: 30px;
   }
 
-  .main-title h3 {
-    font-size: 28px;
-  }
-
   .number {
     font-size: 20px;
   }
@@ -1460,12 +1454,10 @@ header {
   .w-30 p {
     font-size: 18px;
     padding-top: 100px;
-    padding-left: 18px;
   }
 
   .w-30 h2 {
     font-size: 30px;
-    padding-left: 35px;
   }
 
   .w-70 {
@@ -1477,9 +1469,6 @@ header {
     margin-bottom: 30px;
   }
 
-  .section01 .counsel {
-    margin-left: 35px;
-  }
 
   .section01.counsel:hover {
     transform: translateY(-2px);
@@ -1625,8 +1614,11 @@ header {
   header {
     padding: 0 24px;
   }
-  /* section01 */
-  /* section02 */
+
+  /* section03 섹션3 */
+.section03.main-input h3 {
+  font-size:20px;
+}
 
   /* section06 섹션6 */
   .price h4 {
@@ -1644,19 +1636,23 @@ header {
   }
 }
 
-/* 미디어 쿼리 안먹음ㅠ */
 @media (max-width: 390px) {
+  /* section02 섹션2 */
+  .section02.main-title h2 {
+    font-size: 25px;
+  }
+
   /* section03 섹션3 */
-  .main-title h4 {
+  .section03.main-title h4 {
     font-size: 16px;
   }
-  .main-title h3 {
+  .section03.main-title h3 {
     font-size: 23px;
   }
-  .check-box label {
+  .section03.check-box label {
     font-size: 12px;
   }
-  .main-input h3 {
+  .section03.main-input h3 {
     font-size: 18px;
   }
 
@@ -1678,5 +1674,12 @@ header {
   /* section08 섹션8 */
   .section08 .main-text h3 {
     font-size: 28px;
+  }
+}
+
+@media (max-width:390px){
+   /* section02 섹션2 */
+  .main-title h2 {
+    font-size: 22px;
   }
 }
