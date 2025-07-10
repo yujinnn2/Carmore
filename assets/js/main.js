@@ -16,13 +16,11 @@ let sec01_swiper = new Swiper(".sec01_mySwiper", {
 // section07 swiper
 let sec07_swiper = new Swiper(".sec07_mySwiper", {
   direction: "vertical",
-
-
   loop: true,
   grabCursor: true,
   // autoplay: {
   //   delay: 1500,
-  //  disableOnInteraction: true
+  //   disableOnInteraction: true
   // },
   mousewheel: true,
   centeredSlides: true,
@@ -32,19 +30,19 @@ let sec07_swiper = new Swiper(".sec07_mySwiper", {
       slidesPerView: 3.5,
     },
     1024: {
-      slidesPerView: 2.5,
-    },
-    768: {
       slidesPerView: 3,
     },
-    540: {
+    768: {
       slidesPerView: 2.5,
+    },
+    540: {
+      slidesPerView: 3.5,
     },
     430: {
-      slidesPerView: 2.5,
+      slidesPerView: 3.5,
     },
     390: {
-      slidesPerView: 2,
+      slidesPerView: 3.5,
     }
   }
 });
