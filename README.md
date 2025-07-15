@@ -136,7 +136,6 @@ Carmore/
 - **Lazy Loading**: 이미지 및 비동기 리소스 최적화
 - **CSS 파일 최소화**
 - **Webfont preload** 적용
----
 
 ## ** 성능 메트릭스 (Lighthouse 기준)**
 
@@ -146,5 +145,3 @@ Carmore/
 | Accessibility | 96 |
 | Best Practices | 95 |
 | SEO | 91 |
-
----
