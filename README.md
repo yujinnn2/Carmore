@@ -1,8 +1,5 @@
 # [Carmore] 중고차 랜딩페이지 README
 
-![Image](https://github.com/user-attachments/assets/ae47b0d0-cc56-4604-afa1-90a8c2e2cdcf)
-
-
 - 배포 URL :https://carmore.netlify.app
 
 ## 1. 프로젝트 소개
@@ -111,9 +108,6 @@ Carmore/
 > `assets/css/reset.css`, `normalize.css`, `common.css` 등 기본 스타일 포함 
 > 
 
-![Image](https://github.com/user-attachments/assets/726a2452-32f5-42b0-867d-65f07db8e0d3)
-
-
 ###  3. 사용자 리뷰 섹션 (Vertical Interaction)
 사용자 피드백이나 차량 후기 등을 강조하기 위한 세로 스크롤 기반 콘텐츠 슬라이드 구성
 
@@ -126,9 +120,6 @@ Carmore/
 > 
 > `index.html` `assets/js/main.js` `assets/css/style.css`
 > 
-
-
-![Image](https://github.com/user-attachments/assets/48776fe2-c3a1-4b9d-a288-6d600e6f82ab)
 
 
 ## **성능최적화**
